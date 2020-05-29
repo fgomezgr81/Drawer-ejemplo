@@ -10,13 +10,21 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-              child: Container(
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Text('Franacisco Gomez'),
+                ],
+              ),
+            ),
             decoration: BoxDecoration(
                 image: DecorationImage(
               image: AssetImage('assets/drawer.jpg'),
               fit: BoxFit.cover,
             )),
-          )),
+          ),
           ListTile(
             leading: Icon(Icons.pages, color: Colors.blue),
             title: Text('Pages'),
